@@ -1,0 +1,282 @@
+body,
+div,
+ol,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 18px;
+  font-family: Arial;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  height: 1.5em;
+  line-height: 1.5em;
+}
+.calendar {
+  overflow: hidden;
+  width: 552px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 3px solid #57abff;
+}
+.calendar .new-calendar-left {
+  float: left;
+  width: 392px;
+  padding: 10px;
+}
+.calendar .new-calendar-right {
+  float: left;
+  width: 120px;
+  height: 450px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: #5caeff;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#5af), to(#73b9ff));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#55aaff), to(#73b9ff));
+  font-size: 13px;
+}
+.control-bar {
+  overflow: hidden;
+  line-height: 2em;
+  font-size: 14px;
+  border-bottom: 1px solid #57abff;
+}
+.control-bar > div {
+  float: left;
+  margin: 0 0 10px 0;
+  border: 1px solid #c9cccf;
+  font-size: 14px;
+}
+.control-bar .calendar-year-control {
+  margin-right: 4px;
+}
+.control-bar .return-today {
+  float: right;
+  padding: 0 1em;
+  background-color: #fafafa;
+  cursor: default;
+}
+.control-bar .return-today:hover {
+  border: 1px solid #5caeff;
+}
+.calendar-control-box {
+  overflow: hidden;
+}
+.calendar-control-box .pre-select,
+.calendar-control-box .next-select {
+  width: 2em;
+  height: 1em;
+  background-color: #fcfcfc;
+  cursor: pointer;
+}
+.calendar-control-box .pre-select .border-box,
+.calendar-control-box .next-select .border-box {
+  border: 1px solid #fff;
+  z-index: 202;
+}
+.calendar-control-box .pre-select .border-box:hover,
+.calendar-control-box .next-select .border-box:hover {
+  border: 1px solid #fff;
+}
+.calendar-control-box .pre-select {
+  float: left;
+}
+.calendar-control-box .pre-select .icon {
+  background-position: 0 0;
+}
+.calendar-control-box .next-select {
+  float: right;
+}
+.calendar-control-box .next-select .icon {
+  background-position: 0 -25px;
+}
+.calendar-control-box .dropdown {
+  margin-left: 3em;
+  margin-right: 2em;
+  cursor: default;
+}
+.calendar-year-control {
+  width: 11em;
+}
+.calendar-year-control .dropdown {
+  width: 6em;
+}
+.calendar-year-control .dropdown-btn-group {
+  width: 6em;
+  overflow: hidden;
+}
+.calendar-year-control .dropdown-btn {
+  float: left;
+  width: 4em;
+}
+.calendar-year-control .dropdown-menu-box {
+  width: 6em;
+}
+.calendar-month-control {
+  width: 10em;
+}
+.calendar-month-control .dropdown {
+  width: 5em;
+}
+.calendar-month-control .dropdown-btn-group {
+  width: 5em;
+  overflow: hidden;
+}
+.calendar-month-control .dropdown-btn {
+  float: left;
+  width: 3em;
+}
+.calendar-month-control .dropdown-menu-box {
+  width: 4em;
+}
+.icon-box {
+  padding: 0.3em 0 0.7em;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  margin: 0 auto;
+  background: url("../images/icons.gif") no-repeat center center;
+}
+.dropdown-btn-group {
+  overflow: hidden;
+}
+.dropdown-btn-group .dropdown-btn-icon {
+  float: left;
+  width: 2em;
+}
+.dropdown-menu {
+  position: absolute;
+  margin-left: -1em;
+  background: #fff;
+  text-align: center;
+}
+.dropdown-menu-box {
+  height: 18em;
+  overflow: auto;
+  cursor: default;
+}
+.dropdown-btn-icon {
+  background-color: #fcfcfc;
+}
+.dropdown-option {
+  height: 1.5em;
+  line-height: 1.5em;
+  z-index: 203;
+}
+.dropdown-option:hover {
+  background-color: #ccc;
+}
+.dropdown-option-selected {
+  background: #ccc;
+}
+.icon-triangle-down {
+  width: 1em;
+  height: 1em;
+  background-position: 0 -50px;
+}
+.week-day-title-box {
+  overflow: hidden;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-bottom: 1px solid #c8cacc;
+  list-style: none;
+}
+.week-day-title {
+  float: left;
+  width: 3em;
+  margin: 0 1px;
+  text-align: center;
+}
+.weekends {
+  color: #e02d2d;
+}
+.day-info-box {
+  float: left;
+  width: 3em;
+  margin: 0 1px;
+  text-align: center;
+}
+.day-info-box .today-box {
+  background-color: #fb0;
+}
+.day-info-box .day-border-box {
+  border: 3px solid #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.day-info-box .selected-day-box {
+  border: 3px solid #fb0;
+}
+.day-info-box .day-border-box:hover {
+  border: 3px solid #fb0;
+}
+.day-info-box .day-ifo {
+  font-size: 18px;
+}
+.day-info-box .holiday-ifo {
+  overflow: hidden;
+  width: 40px;
+  margin: 0 auto;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+}
+.day-info-box .holiday-preview-box {
+  color: #e02d2d;
+}
+.cross-day {
+  color: #bfbfbf;
+}
+.cross-day .weekends {
+  color: #bfbfbf;
+}
+.calendar-content-box {
+  overflow: hidden;
+  text-align: center;
+}
+.calendar-content-box > div {
+  overflow: hidden;
+  border-bottom: 1px solid #c8cacc;
+}
+.detail-box {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #94c9cc;
+}
+.detail-box .detail-ifo1 {
+  width: 75px;
+  height: 75px;
+  margin: 10px auto 10px;
+  line-height: 76px;
+  font-size: 52px;
+  background: #fb0;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1), -1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.detail-box .detail-ifo2,
+.detail-box .detail-ifo3,
+.detail-box .detail-ifo4 {
+  height: 2em;
+  line-height: 2em;
+}
+.holiday-box {
+  margin-top: 1em;
+  font-weight: bold;
+}
+.holiday-box > p {
+  font-size: 12px;
+  margin-top: em;
+  margin-bottom: 1em;
+  color: #e02d2d;
+  text-align: center;
+}
